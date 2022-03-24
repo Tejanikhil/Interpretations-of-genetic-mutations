@@ -3,19 +3,19 @@ This project is about mutation identification using different pattern matching t
 ## 1. Exact String matching techniques: 
 As the name says that these techniques are used to find a particular pattern present in the string. Using the exact string matching techniques one can find a sub-string present in a parent string. These techniques will not allow any mismatches like as shown below: 
 Let, <br />
-Parent String = ACGGCTAGCCAGGCTAGACCAGT
-substring = AGGCT
+Parent String = ACGGCTAGCCAGGCTAGACCAGT <br />
+substring = AGGCT <br />
 If we want find out the position of substring prenet in the parent string or if we want to check whether the substring is present in the parent string or not.
 
 ## 2. Approximate string matching technique: 
-As the name says that these techniques are used to find the string present inside the parent string allowing some mistakes. These techniques allows certain number of mismatches in the string like as show below: 
+As the name says that these techniques are used to find the string present inside the parent string allowing some mistakes. These techniques allows certain number of mismatches in the string like as show below:  <br />
 Let, <br />
 Parent string = ACGGCTAGCCAGGCTAGACCAGT <br />
 substring = TAGCAAGG <br />
 As we can see here the substring is not present in the parent string but if we change the nucleotide A at index 4 in substring to C then it exactly match with the parent string. So, we say that the substring matches with the parent string with a distance of 1 nucleotide. This is acheived using the approximate string matching techniques. <br />
 There are two different types of approximate string matching techniques
 ### 1. Hamming distance: 
-Hamming distance is a type of approximate string matching technique that is used to find the number of substitutions to be made to a string in order to convert into a exact matched string. Hamming distance calculated the number of substitution made in the string but it fails to identify the insertions and deletions.
+Hamming distance is a type of approximate string matching technique that is used to find the number of substitutions to be made to a string in order to convert into a exact matched string. Hamming distance calculated the number of substitution made in the string but it fails to identify the insertions and deletions. <br />
 Consider two strings <br />
 Parent string = ACDJMEKNTZ <br />
 Pattern       = TCDKMFKNTY <br />
